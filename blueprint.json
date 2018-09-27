@@ -21,11 +21,11 @@
         "title": "ldap ou"
       }
     },
-    "timestamp": "2018-09-27T10:25:05+10:00"
+    "timestamp": "2018-09-27T11:08:28+10:00"
   },
   "software": {
     "base": {
-      "name": "ldap_ou",
+      "name": "ldap",
       "cardinal": "ldap",
       "publisher_namespace": "EnginesSystem",
       "type_path": "ldap_ou",
