@@ -21,7 +21,7 @@
         "title": "ldap ou"
       }
     },
-    "timestamp": "2018-09-27T10:21:20+10:00"
+    "timestamp": "2018-09-27T10:22:19+10:00"
   },
   "software": {
     "base": {
@@ -45,6 +45,12 @@
         "value": "ldap.engines.internal"
       }
     ],
+    "target_environment_variables": [
+      {
+        "variable_name": "type",
+        "environment_variable_name": "ldap_ou"
+      }
+    ],
     "consumers": {
       "accepts": [
         "ManagedEngine",
@@ -62,7 +68,7 @@
         }
       },
       {
-        "name": "ldap_ou",
+        "name": "ou",
         "mandatory": true,
         "immutable": true,
         "ask_at_build_time": true,
