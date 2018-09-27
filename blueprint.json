@@ -15,12 +15,61 @@
         "level": "alpha",
         "patch": 0
       }
-    }
+    },
+    "software": {
+      "display": {
+        "title": "ldap ou"
+      }
+    },
+    "timestamp": "2018-09-27T10:21:20+10:00"
   },
   "software": {
     "base": {
+      "name": "ldap_ou",
+      "cardinal": "ldap",
+      "publisher_namespace": "EnginesSystem",
+      "type_path": "ldap_ou",
+      "service_handle_field": "service_name",
+      "deployment_type": "worker",
       "default_stop_timeout": 0,
-      "restart_attempts": 0
-    }
+      "restart_attempts": 0,
+      "create_user": "0"
+    },
+    "disposition": {
+      "persistent": true,
+      "consumer_exportable": true
+    },
+    "constants": [
+      {
+        "name": "LDAP_HOST",
+        "value": "ldap.engines.internal"
+      }
+    ],
+    "consumers": {
+      "accepts": [
+        "ManagedEngine",
+        "ManagedService"
+      ]
+    },
+    "consumer_params": [
+      {
+        "name": "type",
+        "value": "ou",
+        "mandatory": true,
+        "immutable": true,
+        "input": {
+          "type": "hidden"
+        }
+      },
+      {
+        "name": "ldap_ou",
+        "mandatory": true,
+        "immutable": true,
+        "ask_at_build_time": true,
+        "input": {
+          "type": "string"
+        }
+      }
+    ]
   }
 }
