@@ -21,7 +21,7 @@
         "title": "ldap ou"
       }
     },
-    "timestamp": "2018-09-27T11:08:28+10:00"
+    "timestamp": "2018-09-27T12:19:42+10:00"
   },
   "software": {
     "base": {
@@ -47,7 +47,7 @@
     ],
     "target_environment_variables": [
       {
-        "variable_name": "ou",
+        "variable_name": "cn",
         "environment_variable_name": "ldap_ou"
       }
     ],
@@ -68,7 +68,7 @@
         }
       },
       {
-        "name": "ou",
+        "name": "cn",
         "mandatory": true,
         "immutable": true,
         "ask_at_build_time": true,
