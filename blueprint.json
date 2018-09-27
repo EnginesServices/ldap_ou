@@ -21,7 +21,7 @@
         "title": "ldap ou"
       }
     },
-    "timestamp": "2018-09-27T10:22:19+10:00"
+    "timestamp": "2018-09-27T10:25:05+10:00"
   },
   "software": {
     "base": {
@@ -47,7 +47,7 @@
     ],
     "target_environment_variables": [
       {
-        "variable_name": "type",
+        "variable_name": "ou",
         "environment_variable_name": "ldap_ou"
       }
     ],
@@ -69,6 +69,48 @@
       },
       {
         "name": "ou",
+        "mandatory": true,
+        "immutable": true,
+        "ask_at_build_time": true,
+        "input": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "read_access",
+        "value": "all",
+        "immutable": true,
+        "ask_at_build_time": true,
+        "input": {
+          "type": "select_with_input",
+          "label": "read access",
+          "collection": {
+            "include_blank": true,
+            "items": {
+              "all": "by all",
+              "authenticated": "authenticated",
+              "private": "private"
+            }
+          }
+        }
+      },
+      {
+        "name": "write_access",
+        "immutable": true,
+        "ask_at_build_time": true,
+        "input": {
+          "type": "select_with_input",
+          "collection": {
+            "items": {
+              "none": "",
+              "authenticated": "Authenticated"
+            }
+          }
+        }
+      },
+      {
+        "name": "service_name",
+        "value": "ou_Engines_Field(cn)",
         "mandatory": true,
         "immutable": true,
         "ask_at_build_time": true,
