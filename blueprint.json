@@ -21,7 +21,7 @@
         "title": "ldap ou"
       }
     },
-    "timestamp": "2018-09-27T12:19:42+10:00"
+    "timestamp": "2019-06-25T14:11:47+10:00"
   },
   "software": {
     "base": {
@@ -43,6 +43,10 @@
       {
         "name": "LDAP_HOST",
         "value": "ldap.engines.internal"
+      },
+      {
+        "name": "backup_support",
+        "value": "true"
       }
     ],
     "target_environment_variables": [
